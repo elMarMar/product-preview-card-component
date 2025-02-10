@@ -91,7 +91,9 @@ main {
 }
 
 .card .add-to-cart-button {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 
   box-sizing: border-box;
@@ -99,6 +101,7 @@ main {
   border-radius: 12px;
 
   text-align: center;
+  text-decoration: none;
 
   background-color: hsl(158, 36%, 37%);
   color: white;
@@ -110,6 +113,10 @@ main {
   height: 14px;
   width: 14px;
   margin-right: 10px;
+}
+
+.card span {
+  color: inherit;
 }
 @media (min-width: 740px) {
   .card {
